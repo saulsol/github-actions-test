@@ -24,3 +24,8 @@ jobs:
         run: |
           echo $GITHUB_SHA
           echo $GITHUB_REPOSITORY
+
+      - name: test 4 - Github Actions 비밀 값 test
+        run: |
+          echo ${{secrets.MY_NAME}}
+        
