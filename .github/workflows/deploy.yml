@@ -6,9 +6,16 @@ on:
       - main
 
 jobs:
-  My-Deploy-Job:
+  My-Deploy-Job: # job을 식별하기 위한 ID
     runs-on: ubuntu-latest
 
+    # Step : 특정 작업을 수행하는 가장 작은 단위
     steps:
-      - name: test 해보기
+      - name: test 해보기 # STEP마다 이름을 붙일 수 있음
         run: echo "test~"
+
+      - name: test 2
+        run: | 
+          echo "test2"
+          echo "testing"
+          echo "How to use it"
